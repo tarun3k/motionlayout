@@ -26,6 +26,26 @@
                 motion:targetId="@id/moon"
                 motion:clickAction="toggle"
         />
+        <KeyFrameSet >
+            <KeyPosition
+                motion:motionTarget="@+id/moon"
+                motion:framePosition="50"
+                motion:keyPositionType="parentRelative"
+                motion:percentX="0.7"
+                motion:percentY=".5" />
+            <KeyPosition
+                motion:motionTarget="@+id/moon"
+                motion:framePosition="25"
+                motion:percentX="0.1"
+                motion:keyPositionType="parentRelative"
+                motion:percentY=".6" />
+            <KeyPosition
+                motion:motionTarget="@+id/moon"
+                motion:framePosition="75"
+                motion:percentX="0.3"
+                motion:keyPositionType="parentRelative"
+                motion:percentY=".6" />
+        </KeyFrameSet>
 
         <!-- TODO: Add KeyFrameSet and KeyPosition -->
     </Transition>
